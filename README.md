@@ -1,34 +1,69 @@
-# DragDrop AI File System - Comprehensive Offer Kit
+# spiAI Business Development Kit
 
-**Completely standalone. No Control Room dependencies. Self-hosted, local-first intelligent file organizer.**
+**Prompts + Skills + Agents + Workflows + Systems — the complete Claude-powered operating kit for growing a business.**
 
-This kit scaffolds a full drag-and-drop AI-powered file system that you can offer to clients as a product or custom implementation.
+This is a productized offering you can sell, white-label, or use to run your own
+operations. It packages battle-tested Claude assets into five stacked layers, so a
+buyer goes from "I have Claude" to "Claude runs my sales, marketing, and ops."
 
-## What's Included
-- **app/**: Complete runnable Flask web app with real drag & drop interface, AI simulation (auto-categorization, tagging, metadata extraction, organized folder structure).
-- **docs/**: Sales one-pager, technical overview.
-- **templates/**: SOW, pricing, deployment guides for offering this to clients.
-- **demo/**: Sample files and outputs.
-- **assets/**: Logos and visuals (add your own).
-
-## Quick Start
-```bash
-cd ~/DragDropAI_FileSystem_Kit
-source .venv/bin/activate
-cd app
-python app.py
+```
+Prompts  →  Skills  →  Agents  →  Workflows  →  Systems
+build ideas  build capability  execute tasks  create automation  drive growth
 ```
 
-Open http://127.0.0.1:8080 — drag files onto the big zone. It organizes them, generates metadata, simulates AI insights. All processing stays local.
+## The Five Layers
 
-## How to Offer This
-1. Use the templates in `/templates` to create proposals.
-2. Deploy the `app/` for clients (Docker instructions in docs).
-3. Customize the AI rules in `app.py` (easy to extend with real Ollama, local LLMs, or vision models).
-4. Sell as one-time license + setup or managed service.
+| # | Layer | What it is | Folder | v1 included | Target catalog |
+|---|-------|-----------|--------|-------------|----------------|
+| 1 | **Foundation** — Prompts | Single-shot prompts for a specific output | [`kit/01-prompts`](kit/01-prompts) | 50+ | 500+ |
+| 2 | **Capability** — Skills | Reusable Claude Skills (SKILL.md) for repeatable tasks | [`kit/02-skills`](kit/02-skills) | 6 | 150+ |
+| 3 | **Execution** — Agents | System prompts that turn Claude into a role | [`kit/03-agents`](kit/03-agents) | 6 | 100+ |
+| 4 | **Automation** — Workflows | Multi-step playbooks chaining prompts/skills/agents | [`kit/04-workflows`](kit/04-workflows) | 4 | 25+ |
+| 5 | **Growth Engine** — Systems | Packaged, sellable end-to-end systems | [`kit/05-systems`](kit/05-systems) | 3 | — |
 
-**Tech**: Pure Python/Flask, Tailwind frontend, Pillow for images, local file system as database. Zero external services required.
+> v1 ships a **representative, immediately-usable seed** of each layer plus the
+> taxonomy, templates, and an [expansion roadmap](kit/ROADMAP.md) to reach the
+> full catalog numbers. Every asset is real and runnable today — nothing is a stub.
 
-**License**: You own this kit. Modify and offer it freely.
+## Business Functions Covered
 
-Built as a clean, separate artifact. Ready for immediate client delivery.
+Sales · Marketing · Lead Gen · SEO · Content · Outreach · Ops
+
+## Outcomes It Sells
+
+Save time · Improve output · Increase consistency · Accelerate growth · Scale execution
+
+## Repo Map
+
+```
+kit/
+  01-prompts/     Foundation Layer — prompt library by business function
+  02-skills/      Capability Layer — Claude Skills (drop into Claude Code / Projects)
+  03-agents/      Execution Layer — agent system prompts
+  04-workflows/   Automation Layer — step-by-step playbooks
+  05-systems/     Growth Engine Layer — packaged offerings
+  ROADMAP.md      How to grow the seed into the full 500+/150+/100+/25+ catalog
+sales/            Pricing, packaging, sales page copy, SOW
+delivery/         Client onboarding + Notion/Claude operating setup
+_archive/         Previous (deprecated) drag-drop file-organizer prototype
+```
+
+## How To Sell It
+
+1. Pick a packaging tier in [`sales/pricing.md`](sales/pricing.md).
+2. Use [`sales/sales-page.md`](sales/sales-page.md) for the landing page / DM pitch.
+3. Deliver with [`delivery/onboarding.md`](delivery/onboarding.md).
+4. Upsell into a **System** ([`kit/05-systems`](kit/05-systems)) — the highest-margin tier.
+
+## How To Use It (as the operator)
+
+Each asset says how to run it. In general:
+- **Prompts** — paste into Claude (claude.ai, the API, or Claude Code).
+- **Skills** — drop the folder into a Claude Code/Project `skills/` directory.
+- **Agents** — paste the system prompt into a Project or API system field.
+- **Workflows** — follow the numbered steps; each step points to the asset it uses.
+- **Systems** — full setup guides that wire the above together.
+
+---
+
+*Built for the spiAI business. White-label freely — replace "spiAI" with your brand.*

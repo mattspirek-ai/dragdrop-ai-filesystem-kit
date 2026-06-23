@@ -1,0 +1,12 @@
+{
+  "business": "Harbor Point Consulting (6-person management consultancy)",
+  "hourly_rate": 95,
+  "tasks": [
+    {"name": "Cold outreach emails to prospects", "function": "outreach", "times_per_month": 120, "minutes_each": 8, "ai_fit": 5},
+    {"name": "Drafting proposals from call notes", "function": "sales", "times_per_month": 12, "minutes_each": 90, "ai_fit": 4},
+    {"name": "LinkedIn thought-leadership content", "function": "content", "times_per_month": 16, "minutes_each": 60, "ai_fit": 4},
+    {"name": "Summarizing discovery calls", "function": "sales", "times_per_month": 25, "minutes_each": 25, "ai_fit": 5},
+    {"name": "Weekly client status reports", "function": "ops", "times_per_month": 24, "minutes_each": 45, "ai_fit": 4},
+    {"name": "Actual client strategy & delivery", "function": "ops", "times_per_month": 40, "minutes_each": 120, "ai_fit": 1}
+  ]
+}

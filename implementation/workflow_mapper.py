@@ -77,18 +77,20 @@ def score(tasks, rate):
 
 
 def recommend(rows):
-    out, phase1_savings = [], 0.0
-    for i, r in enumerate(rows):
+    out, phase1_savings, eligible_rank = [], 0.0, 0
+    for r in rows:
         assets, system = ASSET_MAP.get(r["function"], ("(custom)", ""))
         if r["ai_fit"] <= 2:
             phase, note = "Skip / human", "judgement-heavy — keep human"
-        elif i < 2:
-            phase, note = "PHASE 1 (now)", "highest cost x best fit — start here"
-            phase1_savings += r["cost"] * 0.7   # assume ~70% of the hours reclaimed
-        elif i < 4:
-            phase, note = "Phase 2", "add once Phase 1 is proven"
         else:
-            phase, note = "Phase 3", "nice-to-have"
+            if eligible_rank < 2:
+                phase, note = "PHASE 1 (now)", "highest cost x best fit — start here"
+                phase1_savings += r["cost"] * 0.7   # assume ~70% of the hours reclaimed
+            elif eligible_rank < 4:
+                phase, note = "Phase 2", "add once Phase 1 is proven"
+            else:
+                phase, note = "Phase 3", "nice-to-have"
+            eligible_rank += 1
         out.append({**r, "assets": assets, "system": system, "phase": phase, "note": note})
     return out, phase1_savings
 

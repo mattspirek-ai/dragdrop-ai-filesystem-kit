@@ -25,7 +25,14 @@ build ideas  build capability  execute tasks  create automation  drive growth
 > taxonomy, templates, and an [expansion roadmap](kit/ROADMAP.md) to reach the
 > full catalog numbers. Every asset is real and runnable today — nothing is a stub.
 
-### ⭐ The Proof Layer — what actually makes this sellable
+### ⭐ Start here: how the business actually runs
+If your question is *"how does a client use this, how do I pitch it, and how do I make
+money?"* — read [`implementation/`](implementation/). It's the operating model: sell a paid
+audit, run [`workflow_mapper.py`](implementation/workflow_mapper.py) to map their tasks to
+the right kit setup with the dollar savings attached, implement Phase 1, then convert to a
+recurring retainer.
+
+### The Proof Layer — what makes it measurable
 A kit of prompts/agents is the *engine*, not the *product*. Businesses buy **measurable
 outcomes**, so [`roi/`](roi/) turns the kit into a provable, ROI-backed service:
 qualified meetings booked, tracked funnel data, a runnable [ROI calculator](roi/roi_calculator.py),

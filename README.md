@@ -25,6 +25,14 @@ build ideas  build capability  execute tasks  create automation  drive growth
 > taxonomy, templates, and an [expansion roadmap](kit/ROADMAP.md) to reach the
 > full catalog numbers. Every asset is real and runnable today — nothing is a stub.
 
+### ⭐ The Proof Layer — what actually makes this sellable
+A kit of prompts/agents is the *engine*, not the *product*. Businesses buy **measurable
+outcomes**, so [`roi/`](roi/) turns the kit into a provable, ROI-backed service:
+qualified meetings booked, tracked funnel data, a runnable [ROI calculator](roi/roi_calculator.py),
+a risk-reversed [pilot offer](roi/pilot-offer.md) to land your first clients, and a
+[case-study template](roi/case-study-template.md) to build the track record you pitch with.
+**Start here if your question is "what would a business actually pay for?"**
+
 ## Business Functions Covered
 
 Sales · Marketing · Lead Gen · SEO · Content · Outreach · Ops
